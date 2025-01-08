@@ -4,10 +4,8 @@
 - GUI support is not presently provided for Linux
 
 ## GUI mode
-- Copy and Paste does not work on macOS (see [Dioxus issue 1691](https://github.com/DioxusLabs/dioxus/issues/1691))
 - Console window may remain visible when run in GUI mode except on Windows
 - State information is only saved when an action is performed, not when app is closed
-- YubiKey reset capability is not available on macOS on x86_64 hardware
 
 ## Windows
 - When the VSC feature is used, the app takes several seconds to close

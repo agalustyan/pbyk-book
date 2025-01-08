@@ -25,21 +25,15 @@ VSCs, the name of the device is used.
 
 The reset feature can be accessed in one of two ways depending on the state of the device. For devices that have not
 been enrolled with Purebred previously, and thus have a different management key installed, simply launching the `pbyk` app
-will display an alert like the one shown below.
-
-<div align="center">
-    <img src="screenshots/reset_alert.png">
-</div>
-
-For devices that have been enrolled with Purebred previously, launching the app then clicking the DISA logo five times
-within five seconds will display the same alert.
-
-When the 'Yes' button is clicked, the app will display a form like the one shown below, which can be used to complete
-the reset process.
+will display a reset form like the one shown below.
 
 <div align="center">
     <img src="screenshots/reset.png">
 </div>
+
+For devices that have been enrolled with Purebred previously, launching the app then clicking the DISA logo five times
+within five seconds will display the same form. To refrain from resetting the device, simply close and reopen the app
+without clicking the Reset button on the reset form. 
 
 A limited form of reset is provided for VSCs. For a reset comparable to that provided for Yubikeys, use the [tpmvscmgr](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/tpmvscmgr) utility.
 [Section 4](4_miscellaneous.md#managing-virtual-smart-cards-with-tpmvscmgr) provides some instructions for using tpmvscmgr
