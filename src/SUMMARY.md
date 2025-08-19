@@ -5,3 +5,4 @@
 - [Desktop app usage](./3_gui.md)
 - [Miscellaneous topics](./4_miscellaneous.md)
 - [Known issues](./5_known_issues.md)
+- [Release notes](./6_release_notes.md)

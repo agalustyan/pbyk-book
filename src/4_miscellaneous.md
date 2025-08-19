@@ -16,11 +16,11 @@ to lock then reset a YubiKey.
   yubico-piv-tool -a set-chuid
   yubico-piv-tool -a set-ccc
   yubico-piv-tool -a set-mgm-key -n 020203040506070801020304050607080102030405060708
-  yubico-piv-tool -a change-puk -P 12345678 -N 12345678
-  yubico-piv-tool -a change-pin -P 123456 -N 77777777
+  yubico-piv-tool -a change-puk -P 12345678 -N 08182025
+  yubico-piv-tool -a change-pin -P 123456 -N 08182025
 ```
 
-The reset_yubikey function is intended to perform the equivalent steps.
+The reset_yubikey function is intended to perform the equivalent steps. Where AES management keys are desired or required, add `-m AES192` to the end of the `set-mgm-key` command above.
 
 The caller is assumed to have enforced PIN and PUK requirements. If either the PIN or PUK fails
 to satisfy requirements (as described [here](https://docs.yubico.com/yesdk/users-manual/application-piv/pin-puk-mgmt-key.html)),

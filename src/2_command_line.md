@@ -85,7 +85,7 @@ Name: Microsoft Virtual Smart Card 1
 Name: Microsoft Virtual Smart Card 0
 ```
 
-Next, reset the YubiKey so that it uses the expected management key.
+Next, reset the YubiKey so that it uses the expected management key. The app will automatically use `AES192` on YubiKey devices that are detected as supporting AES keys, i.e., those with firmware version 5.7.0 or later. For devices that do not support AES, `TDES` is used. The management key value is the same in both cases.
 
 ```bash
 $ pbyk -s 15995762 -r
